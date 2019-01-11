@@ -1,0 +1,93 @@
+
+{
+     "static_routes": [
+      { "address": "1.2.4.0",
+        "mask-length": 20,
+        "nexthop-address": "10.120.1.2",
+        "state": "true"
+      },
+      { "address": "1.2.5.0",
+        "mask-length": 24,
+        "nexthop-address": "10.120.1.1",
+        "state": "true"
+      }],
+
+      "default_gw":[
+        {
+          "nexthop-address": "10.120.1.1",
+          "state":true
+        },
+        {
+          "nexthop-address": "10.120.50.1",
+          "state":true
+        }
+
+      ],
+      
+      "name":[
+        {
+            "name": "APIfirewall"
+        }
+      ],
+
+      "dns":[
+        {
+            "primary": "8.8.8.8",
+            "secondary": "8.8.4.4",
+            "suffix": "checkpoint.com",
+            "tertiary": "3.4.5.6"
+        }
+
+      ],
+
+      "interfaces": [
+        {
+        "interface": "eth1",
+        "ipv4-address":"1.2.2.4",
+        "mask-length":24
+        },
+        {
+          "interface": "eth1.100",
+          "ipv4-address":"100.2.2.10",
+          "mask-length":24
+        },
+        {
+          "interface": "eth1.200",
+          "ipv4-address":"200.2.2.10",
+          "mask-length":24
+        },
+        {
+        "interface": "eth1.300",
+        "ipv4-address":"55.2.2.10",
+        "mask-length":24
+        }
+      ],
+
+      "vlans": [{
+
+          "interface": "eth1",
+          "vlan": "100"
+        },
+        {
+          "interface": "eth1",
+          "vlan": "200"
+        },
+        {
+          "interface": "eth1",
+          "vlan": "300"
+        }
+        ],
+      
+      "ntp":[
+        {
+          "host": "ntp.pool.org",
+          "version": 4
+        }
+      ],
+
+      "ntp_state":[
+        {
+	        "state":"true"
+        }
+      ]
+}

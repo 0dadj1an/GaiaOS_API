@@ -1,0 +1,59 @@
+{
+     "static_routes": [
+     ],
+
+      "default_gw":[
+        
+      ],
+      
+      "name":[
+        
+      ],
+
+      "dns":[
+        
+
+      ],
+
+      "interfaces": [
+        {
+          "interface": "eth1.700",
+          "ipv4-address":"10.2.2.10",
+          "mask-length":24
+        },
+        {
+          "interface": "eth1.800",
+          "ipv4-address":"20.2.2.10",
+          "mask-length":24
+        },
+        {
+        "interface": "eth1.900",
+        "ipv4-address":"30.2.2.10",
+        "mask-length":24
+        }
+      ],
+
+      "vlans": [{
+
+          "interface": "eth1",
+          "vlan": "700"
+        },
+        {
+          "interface": "eth1",
+          "vlan": "800"
+        },
+        {
+          "interface": "eth1",
+          "vlan": "900"
+        }
+        ],
+      
+      "ntp":[
+        
+      ],
+
+      "ntp_state":[
+        
+      ]
+}
+

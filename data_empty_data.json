@@ -1,0 +1,35 @@
+{
+     "static_routes": [
+     
+     
+     ],
+
+      "default_gw":[
+        
+      ],
+      
+      "name":[
+        
+      ],
+
+      "dns":[
+        
+
+      ],
+
+      "interfaces": [
+        
+      ],
+
+      "vlans": [
+        ],
+      
+      "ntp":[
+        
+      ],
+
+      "ntp_state":[
+        
+      ]
+}
+
